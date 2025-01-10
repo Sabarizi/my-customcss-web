@@ -1,16 +1,15 @@
-// footer.tsx
-
 "use client"; // If you want to use client-side interactivity
 
+import Link from 'next/link';
 import styles from '../styles/footer.module.css';
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerLinks}>
-        <a href="/" className={styles.footerLink}>Home</a>
-        <a href="#contact" className={styles.footerLink}>Contact</a>
-        <a href="#Services" className={styles.footerLink}>Services</a>
+        <Link href="/" className={styles.footerLink}>Home</Link>
+        <Link href="#contact" className={styles.footerLink}>Contact</Link>
+        <Link href="#Services" className={styles.footerLink}>Services</Link>
       </div>
       <p className={styles.footerText}>
         © {new Date().getFullYear()} Your Company. All rights reserved.
