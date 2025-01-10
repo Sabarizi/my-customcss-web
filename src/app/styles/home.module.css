@@ -1,6 +1,5 @@
 /* Background and container styling */
 .container {
-  Im
   background: linear-gradient(to bottom, #1a7f7d, #3681d8);
   height: 100vh;
   display: flex;

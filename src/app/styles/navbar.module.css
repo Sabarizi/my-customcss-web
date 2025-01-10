@@ -1,29 +1,55 @@
+/* Base navbar styles */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    background-color: #333;
-  }
-  
-  .logo {
-    color: #fff;
-    font-size: 1.5rem;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: white;
+  position: relative; /* Add this if not already */
+  z-index: 10; /* Ensures the navbar is above other elements */
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.navLinks li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Hide the nav links for mobile */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
   .navLinks {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 10; /* Ensures the mobile menu appears above the hero section */
+  }
+
+  .mobileMenu {
     display: flex;
-    gap: 1rem;
   }
-  
-  .navLinks a {
-    color: #fff;
-    text-decoration: none;
+
+  .hamburger {
+    display: block;
   }
-  
-  @media (max-width: 768px) {
-    .navLinks {
-      flex-direction: column;
-      display: none;
-    }
-  }
-  
+}
