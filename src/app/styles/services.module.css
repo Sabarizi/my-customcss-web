@@ -1,0 +1,60 @@
+.services {
+    text-align: center;
+    padding: 40px 10px;
+    text-decoration: underline;
+    
+  }
+  
+  .services h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .services p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  .serviceItem {
+    display: inline-block;
+    width: 22%;
+    margin: 10px;
+    padding: 20px;
+    background-color: powderblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    }
+    .serviceItem:hover {
+        transform: translateY(-10px); /* Moves the item slightly up */
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Increases shadow on hover */
+        background-color: #f0f0f0; /* Slightly darker background */
+       
+      }
+
+  .serviceItem h3 {
+    font-size: 1.8em;
+    color: #2d2d2d;
+    margin-bottom: 15px;
+  }
+  
+  .serviceItem p {
+    font-size: 1em;
+    color: #260303;
+  }
+  
+  @media (max-width: 768px) {
+    .serviceItem {
+      width: 48%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .serviceItem {
+      width: 100%;
+    }
+  }
+ 
+  
